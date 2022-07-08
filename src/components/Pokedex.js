@@ -129,19 +129,19 @@ const Pokedex = () => {
                 }
             </ul>
             <div className="pages-buttons">
-                <div className='button-container'>
-                    {   
+                    <div className='button-container'>
+                        {   
                         currentPage > 1 && 
                         <button className='page-button' onClick={previousPage}>Previous</button> 
-                    }
+                        }
 
-                    <h2>Page {currentPage}// {numberOfPages}</h2>
+                        <h2>Page {currentPage} {numberOfPages}</h2>
                     
-                    { 
+                        { 
                         currentPage < numberOfPages && 
                         <button className='page-button' onClick={nextPage}>Next</button> 
-                    }          
-                </div>
+                        }          
+                    </div>
                 <h2 className='pages-title'>Search by page number</h2>
                 <div className="pagination-container">
                     {
