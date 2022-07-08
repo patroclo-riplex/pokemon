@@ -101,7 +101,7 @@ const PokemonDetails = () => {
                             }
                         </ul>
                         
-                        <img src={pokemon.sprites?.other.dream_world.front_default} className='pokemon-picture'/>
+                        <img src={pokemon.sprites?.other.dream_world.front_default} alt="xep" className='pokemon-picture'/>
                         <div className="button-section">
                             <button className='info-button' onClick={() => setShowedComponent('about')}>About</button>
                             <button className='info-button middle-button' onClick={() => setShowedComponent('stats')}>Pokemon Stats</button>

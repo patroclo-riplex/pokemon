@@ -59,7 +59,7 @@ const PokemonCard = ({ pokemonURL }) => {
                 <div className='pokemon-index'>
                     {pokemon.id >= 100 ? pokemon.id : (pokemon.id >= 10 ? ('0'+pokemon.id) : ('00' + pokemon.id))}
                 </div>
-                <img src={pokemon.sprites?.other["official-artwork"].front_default} className='pokemon-image'/>
+                <img src={pokemon.sprites?.other["official-artwork"].front_default} alt="for sell" className='pokemon-image'/>
                 <h2>{pokemon.name}</h2>
                 <div className="types-container">
                     <p className='types-info'>

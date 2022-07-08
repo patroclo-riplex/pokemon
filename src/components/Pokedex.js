@@ -77,7 +77,7 @@ const Pokedex = () => {
     return (
         <div>
             <div className="pokedex-top">
-                <img src={pokemon} className='pokedex-image'/>
+                <img src={pokemon} alt="pedro" className='pokedex-image'/>
                 <p className='intro-message'>Welcome <strong>{userName}</strong>, let's get the stats of your favorite Pokemon</p>
                 <div className="search-container">
                     <div className="selects-container">
@@ -113,7 +113,7 @@ const Pokedex = () => {
                             onChange={e => setPokemonName(e.target.value)}
                             value={pokemonName}
                         />
-                        <button><img src={pokeball} className='pokeball-image'/></button>
+                        <button><img src={pokeball} alt="sara" className='pokeball-image'/></button>
                     </form>
                 </div>
             </div>
