@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    
+    font-family: Early_GameBoy;
+}
+
+@font-face {
+    font-family: Early_GameBoy;
+    src: url('../images/Early_GameBoy.ttf');
+}
+
+.pokemon-list {
+    background-color: #f1f1e9;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.column {
+    padding: 45px;
+    width: 50%;
+}
+
+.pokemon-card {
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+    color: #f7f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.pokemon-card:hover {
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0.85;
+}
+
+.pokemon-index {
+    border-bottom: solid;
+    font-size: 20px;
+}
+
+.pokemon-image {
+    background-color: transparent;
+    margin: 20px auto;
+    width: 220px;
+}
+
+.types-container {
+    align-items: center;
+    background: rgb(157,118,1);
+    background: linear-gradient(90deg, rgba(157,118,1,1) 28%, rgba(212,175,55,1) 100%);
+    border: solid;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 8px;
+    width: 100%;
+}
+
+.pokemon-card h2 {
+    background-color: transparent;
+    font-size: 27px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.types-info {
+    border-radius: 8px;
+    font-size: 14px;
+    list-style: none;
+}
+
+.types-info span {
+    margin-left: 6px;
+}
+
+@media (min-width: 992px) {
+    .pokemon-list {
+        background-color: #f3f30d;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-top: 15px;
+    }
+    
+    .column {
+        padding: 30px;
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .pokemon-list {
+        background-color: #efef17;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-top: 15px;
+    }
+    
+    .column {
+        padding: 25px;
+        width: 25%;
+    }
+}

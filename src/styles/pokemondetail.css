@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+.details-container {
+    background-color: rgb(226, 223, 223);
+    height: 100vh;
+}
+
+.header {
+    align-items: center;
+    border-bottom: 5px solid rgb(65, 61, 61);
+    display: flex;
+    flex-direction: row;
+    height: 14vh;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.header h2 {
+    font-size: 50px;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+.left-button {
+    background-color: transparent;
+    border: solid;
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.arrow {
+    color: rgb(65, 61, 61);
+    font-size: 45px;
+    width: 48px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+}
+
+.ash-container, .pikachu-container {
+    height: 86vh;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+.ash-image {
+    background-image: url('../images/ash.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main-info {
+    border: 5px solid rgb(65, 61, 61);
+    border-radius: 10px;
+    height: 50vh;
+    margin-top: -5px;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.main-info h2 {
+    font-size: 30px;
+}
+
+.pikachu-container {
+    padding: 120px 50px;
+}
+
+.pikachu-image {
+    background-image: url('../images/pikachu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.types-container {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.type-item {
+    background-color: rgb(209, 195, 195);
+    border-radius: 17px;
+    font-size: 25px;
+    list-style: none;
+    padding: 6px 20px;
+}
+
+.pokemon-picture {
+    display: flex;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    z-index: 10;
+}
+
+.button-section {
+    align-items: center;
+    background-color: rgb(209, 195, 195);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: block;
+    left: -5px;
+    padding: 40px 30px 10px;
+    position: absolute;
+    top: 44vh;
+    width: 101.3%;
+    z-index: 1;
+}
+
+.info-button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding-top: 40px;
+    width: 25%;
+}
+
+.middle-button {
+    width: 50%;
+}
+
+.info-button:hover {
+    cursor: pointer;
+    font-size: 19px;
+    text-decoration: underline;
+}
+
+.about-container, .pokemon-stats-container, .moves {
+    background-color: rgb(250, 244, 244);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 28vh;
+    left: -5px;
+    padding: 0 60px 20px;
+    position: absolute;
+    top: 56vh;
+    width: 101.3%;
+}
+
+.about-container h2, .pokemon-stats-container h2, .moves h2 {
+    border-bottom: 3px solid rgb(65, 61, 61);
+    border-top: 1px solid rgb(65, 61, 61);
+    padding: 5px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pokemon-description, .pokemon-abilities {
+    text-align: center;
+    width: 50%;
+}
+
+.pokemon-description {
+    border-right: 1px solid rgb(88, 80, 80);
+}
+
+.pokemon-description p, .pokemon-abilities p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.pokemon-description li, .pokemon-abilities li {
+    line-height: 50px;
+}
+
+.pokemon-stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pokemon-stats-container .progress {
+    align-items: center;
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.progress h6 {
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.progress .progress-bar {
+    background-color: #e2e2e2;
+    border-radius: 4px ;
+    left: 260px;
+    height: 8px;
+    position: absolute;   
+    width: 46%;
+}
+
+.progress .progress-bar .processing {
+    background-color: rgb(121, 5, 5);  
+    border-radius: 4px;
+    height: 100%;
+    width: 60%;
+}
+
+.progress .percent {
+    left: 200px;   
+    position: absolute;
+}
+
+.moves-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    font-family: Early_GameBoy;
+    margin: 0;
+    padding: 0;
+}
+
+.content-input input,
+.content-select select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select {
+	padding: 0 25px;
+    width: 100%;
+}
+ 
+.content-select select {
+    background: #414b46;
+    border-bottom:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    color: #999;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    padding: 7px 10px;
+    position: relative;
+    overflow-y: visible;
+    text-transform: capitalize;
+    transition: all 0.25s ease;
+	width: 100%; 
+}
+
+@font-face {
+    font-family: Early_GameBoy;
+    src: url('../images/Early_GameBoy.ttf');
+}
+
+.pokedex-top {
+    background-color: #f1f1e9;
+    background-image: url('../images/types.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pokedex-image {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 60%;
+}
+
+.intro-message { 
+    font-size: 24px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
+
+.search-container {
+    background-color: #f1f1e9;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 30px 0;
+}
+
+.selects-container {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.pages-buttons {
+    background-color: #f1f1e9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.pages-title {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pagination-container {
+    padding-bottom: 60px;
+}
+
+.button-list {
+    background-color: rgb(238, 210, 210);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    height: 35px;
+    margin: 3px;
+    width: 60px;
+}
+
+.button-list:hover {
+    background-color: rgb(243, 149, 149);
+    border: solid;
+    cursor: pointer;
+}
+
+.input-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    height: 30px;
+    justify-content: space-around;
+    padding: 0 22px;
+    position: relative;
+    width: 100%;
+}
+
+.input-container input {
+    font-size: 22px;
+    height: 35px;
+    width: 80%;
+}
+
+.input-container button {
+    background: transparent;
+    border: none;
+    height: 30px;
+}
+
+.input-container button:hover {
+    background-color: rgb(226, 223, 223);
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.pokeball-image {
+    height: 35px;
+    margin-left: -30px;
+    margin-top: -18px;
+    position: absolute;
+}
+
+.pokeball-image:hover {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 0;
+    width: 85%;
+}
+
+.showing {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.page-button {
+    background: rgb(240,45,43);
+    background: linear-gradient(90deg, rgba(240,45,43,1) 0%, rgba(102,69,69,1) 50%, rgba(1,1,1,1) 100%);
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 10px;
+    color: #f1f1e9;
+    font-size: 20px;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.page-button:hover {
+    box-shadow: 7px 6px 9px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    font-size: 22px;
+    opacity: 0.85;
+    transition: 0.1s;
+}
+
+@media (min-width: 1440px) {
+    .search-container {
+        background-color: #f1f1e9;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 30px 0;
+    }
+
+    .selects-container {
+        display: flex;
+        flex-direction: row;
+        height: 6vh;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    .input-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        height: 30px;
+        justify-content: space-evenly;
+        padding: 0 25px;
+        position: relative;
+        width: 50%;
+    }
+
+    .input-container input {
+        font-size: 22px;
+        height: 35px;
+        width: 75%;
+    }
+    
+}

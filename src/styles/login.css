@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 60.5%;
+    height: 95vh;
+}
+
+body {
+    font-size: 16px;
+}
+
+.app {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Early GameBoy;
+    src: url('../images/Early_GameBoy.ttf');
+}
+
+.gameboy-container {
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    width: 50rem;
+}
+
+.hero {
+    background-image: url('../images/virtual.png');
+    background-position: 50% 26%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-container {
+    position: absolute;
+    width: 27.5rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    left: 12.4rem;
+    top: 12vh;
+}
+
+.welcome-message {
+    font-family: Early GameBoy;
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+    opacity: 0.65;
+    text-align: center;
+    width: 27.5rem;
+}
+
+.user-input {
+    background: rgb(126,131,131);
+    background: linear-gradient(90deg, rgb(43, 44, 44) 0%, rgb(19, 19, 20) 0%);
+    border-radius: 1rem;
+    font-family: Early GameBoy;
+    font-size: 2.6rem;
+    height: 3.8rem;
+    width: 26.3rem;
+}
+
+.continue-button {
+    background-color: rgb(245, 245, 10);
+    border: solid;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    height: 6.5rem;
+    left: 22.8rem;
+    position: absolute;
+    top: 38vh;
+    width: 6.5rem;
+}
+
+.cancel-button {
+    background-color: rgb(252, 5, 5);
+    border: solid;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    height: 6.5rem;
+    left: 15.5rem;
+    position: absolute;
+    top: 42.5vh;
+    width: 6.5rem;
+}
+
+.continue-button:hover, .cancel-button:hover {
+    cursor: pointer;
+    height: 6.7rem;
+    width: 6.7rem;
+}
